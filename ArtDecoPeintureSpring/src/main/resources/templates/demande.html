@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+ 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Demandes</title>
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+	<link rel="stylesheet" href="css/style.css" th:href="@{css/style.css}">
+	<link href="css/style.css" rel="stylesheet" />
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<div style="	 background-image: url(Images/fPlafond.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;">
+    
+<div class="container">
+<header>
+    <img alt="Logo " src="Images/logoADP.png"  style="border:0;" tabindex="0" width="400" height="193" />
+</header>
+
+<nav>
+     <a href="http://localhost:8080">ACCUEIL</a>
+     <a href="http://localhost:8080/contacter">POUR NOUS CONTACTER</a> 
+     <a href="http://localhost:8080/devis">DEMANDE DE DEVIS</a> 
+    <!-- <a href="#">NOS REALISATIONS</a>--> 
+     <a href="http://localhost:8080/admin">ADMIN</a>  
+</nav>
+
+<main>
+<h1>Bienvenue chez ArtDecoPeinture</h1>
+
+</main> 
+    
+   
+<section >
+<main >
+
+<?php
+
+	echo "<h1>Hello " . $_POST["dvs.nom"] . "</h1>";
+
+	?>
+    <div class="msgbox" th:each=dvs:${dvslist}>
+        <p class="nom" th:text="$_post{dvs.nom}"></p>
+        <p class="prenom" th:text="${dvs.prenom}"></p>
+        <p class="tel" th:text="${dvs.tel}"></p>
+        <p class="email" th:text="${dvs.email}"></p>
+        <p class="timeStamp" th:text="${#temporals.format(dvs.timeStamp,'dd-MM-yyyy HH-mm')}"></p>
+        <p class="messages" th:text="${dvs.messages}"></p>
+    </div>
+</main>
+
+</section> 
+
+<footer>
+<p> Réalisé par diamtech en 2021;</p>
+</footer>
+</div>
+</div>
+
+</body>
+</html>
+

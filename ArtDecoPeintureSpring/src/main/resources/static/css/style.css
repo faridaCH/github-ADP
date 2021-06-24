@@ -1,0 +1,144 @@
+@charset "ISO-8859-1";
+
+
+
+body {
+	 background-image: url(images/fPlafond.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+
+header {
+    height: 220px;
+    text-align: center;
+    }
+
+
+nav {
+    background-color: rgb(248, 246, 246);
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    }
+    
+nav a {
+        text-decoration: none;
+        font-size: 14px;
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+main {
+    height: 280px;
+    text-align: inherit;
+    padding-top: 40px;
+    padding-left: 240px;
+    padding-right: 240px;
+}
+
+h1 {
+    font-size: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p   {
+  
+    font-size: 23px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+li   {
+  
+    font-size: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: rgb(26, 20, 80);
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none; 
+}
+
+h2 {
+    color: white;
+    font-style: italic;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* text-decoration: none; */
+}
+
+.maps {
+    padding-bottom: 50px;
+    padding-left: 240px;
+    padding-top: 150px;
+    
+}
+.carte {
+    padding-bottom: 100px;
+    padding-right: 20px;
+   
+}
+
+.admin{
+	font-size: 20px;
+	 padding-bottom: 0.01px;
+    padding-right: 300px;
+    padding-left: 300px;  
+}
+.devis {
+    padding-bottom: 0.01px;
+    padding-right: 300px;
+    padding-left: 300px;   
+}
+
+.admin input{
+    font-size: 20px;
+    padding-left: 60px;   
+    padding-right: 60px;
+    }
+
+.formBox input{
+ 
+    padding-left: 60px;   
+    padding-right: 60px;
+    }
+
+footer {
+    background-color: rgba(0, 0, 0, 0.384);
+    padding-top: 20px;
+    padding-bottom: 20px;  
+}
+
+
+footer p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    }
+    
+    .diap {
+        margin: 0px;
+        padding-bottom: 50px;
+        padding-top: 250px;
+        padding-right:250px;
+        padding-left:250px
+        
+    }
+    
+    .diap img{
+          width: 900px; 
+          height: 600px; 
+        
+    }
+    
+    
